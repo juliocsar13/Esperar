@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>Crea una Review en Escapar.me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/main.css" id="colors">
+
+</head>
+
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header Container
+================================================== -->
+<header id="header-container" class="fixed fullwidth dashboard">
+
+	<!-- Header -->
+	<div id="header" class="not-sticky">
+		<div class="container">
+			
+			<!-- Left Side Content -->
+			<div class="left-side">
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1 class="text-center" style="color: white"><Strong> Escapar.me</strong></h1>
+				</div>
+
+				
+				
+				
+			</div>
+			<!-- Left Side Content / End -->
+
+			<!-- Right Side Content / End -->
+			<div class="right-side">
+				<!-- Header Widget -->
+				<div class="header-widget">
+					
+					<!-- User Menu -->
+					<div class="user-menu">
+						<div class="user-name"><span><img src="images/dashboard-avatar.jpg" alt=""></span>Admin</div>
+						<ul>
+							<li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+							<li><a href="reviews.html"><i class="sl sl-icon-envelope-open"></i> List Reviews</a></li>
+							<li><a href="places.html"><i class="fa fa-calendar-check-o"></i> List Places</a></li>
+							<li><a href="index.html"><i class="sl sl-icon-power"></i> Logout</a></li>
+						</ul>
+					</div>
+
+					<a href="add-review.html" class="button border with-icon">Crear Review <i class="sl sl-icon-plus"></i></a>
+				</div>
+				<!-- Header Widget / End -->
+			</div>
+			<!-- Right Side Content / End -->
+
+		</div>
+	</div>
+	<!-- Header / End -->
+
+</header>
+<div class="clearfix"></div>
+<!-- Header Container / End -->
+
+
+<!-- Dashboard -->
+<div id="dashboard">
+
+	<!-- Navigation
+	================================================== -->
+
+	<!-- Responsive Navigation Trigger -->
+	<a href="#" class="dashboard-responsive-nav-trigger"><i class="fa fa-reorder"></i> Dash</a>
+
+	<div class="dashboard-nav">
+		<div class="dashboard-nav-inner">
+
+			<ul data-submenu-title="Main">
+				<li class="active"><a href="dash.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+				<li><a href="reviews.html"><i class="sl sl-icon-envelope-open"></i> Reviews <span class="nav-tag messages">21</span></a></li>
+				<li><a href="places.html"><i class="fa fa-calendar-check-o"></i> Places <span class="nav-tag messages">21</span></a></li>
+			</ul>
+			
+			<ul data-submenu-title="Creador de:">
+				
+				<li><a href="add-categories.html"><i class="sl sl-icon-star"></i> Categorias</a></li>
+				<li><a href="add-lifestyles.html"><i class="sl sl-icon-heart"></i> Lifestyles</a></li>
+				<li><a href="add-places.html"><i class="sl sl-icon-plus"></i> Places</a></li>
+				<li><a href="add-review.html"><i class="sl sl-icon-plus"></i> Review</a></li>
+			</ul>	
+
+			
+			
+		</div>
+	</div>
+	<!-- Navigation / End -->
+
+
+	<!-- Content
+	================================================== -->
+	<div class="dashboard-content">
+
+		<!-- Titlebar -->
+		<div id="titlebar">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Crea una Review</h2>
+					<!-- Breadcrumbs -->
+					<nav id="breadcrumbs">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Dashboard</a></li>
+							<li>Add a Review</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+
+				<div id="add-listing">
+
+					<!-- Section -->
+					<div class="add-listing-section">
+
+						<!-- Headline -->
+						<div class="add-listing-headline">
+							<h3><i class="sl sl-icon-doc"></i> Lugar</h3>
+						</div>
+
+						<!-- Title -->
+						<div class="row with-forms">
+							<div class="col-md-12">
+								<h5>A que lugar Pertenece la Review <i class="tip" data-tip-content="Dale un nombre al lugar. Aparecera así en la review."></i></h5>
+								<select class="chosen-select" >
+									<option label="blank">Elge un lugar</option>	
+									<option>Nombre del Lugar #1</option>
+									<option>Nombre del Lugar #2</option>
+									<option>Nombre del Lugar #3</option>
+									<option>Nombre del Lugar #4</option>
+									<option>Nombre del Lugar #5</option>
+									<!-- Traer la opcion o campo de Nombre de Lugar creado en el add-places.html el campo Nombre del Lugar. -->
+								</select>
+							</div>
+						</div>
+
+						<!-- Title -->
+						<div class="row with-forms">
+							<div class="col-md-12">
+								<h5>Nombre de la Review o Lugar <i class="tip" data-tip-content="Es el nombre del lugar al que se visito."></i></h5>
+								<input type="text" placeholder="Nombre del Restaurante, Plaza, Museo... ">
+							</div>
+						</div>
+
+						<!-- Row -->
+						<div class="row with-forms">
+
+							<!-- Status -->
+							<div class="col-md-4">
+								<h5>Categoria</h5>
+								<select class="chosen-select" >
+									<option label="blank">Que tipo de Lugar es?</option>	
+									<option>Restaurante</option>
+									<option>Patio Cervecero</option>
+									<option>Hospedajes</option>
+									<option>Bares & Pubs</option>
+									<option>Pulperia</option>
+									<option>Restaurante</option>
+									<option>Patio Cervecero</option>
+									<option>Hospedajes</option>
+									<option>Bares & Pubs</option>
+									<option>Pulperia</option>
+									<option>Restaurante</option>
+									<option>Patio Cervecero</option>
+									<option>Hospedajes</option>
+									<option>Bares & Pubs</option>
+									<option>Pulperia</option>
+									<option>Restaurante</option>
+									<option>Patio Cervecero</option>
+									<option>Hospedajes</option>
+									<option>Bares & Pubs</option>
+									<option>Pulperia</option>
+									<!-- traer las categorias creadas, que son fisicamente, el lugar commo un Restaurante, una pulperia, un museo, etc. Puse muchas porque cuando desplegas, aparece un predictivo que permite encontrar entre varias opciones, la que necesitas...-->
+								</select>
+							</div>
+
+							<!-- Type -->
+							<div class="col-md-4">
+								<h5>Valoracion <i class="tip" data-tip-content="Que te parecio el lugar, de 1 a 5"></i></h5>
+								
+								<select class="chosen-select-no-single" >
+									<option label="blank">Valor del Lugar</option>	
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									
+								</select>
+							</div>
+
+							<!-- Type -->
+							<div class="col-md-4">
+								<h5>Calificacion en una Palabra<i class="tip" data-tip-content="Describe en dos palabras, que te parecio el lugar."></i></h5>
+								<input type="text" placeholder="Ej: Excelente, Volveria de nuevo...">
+							</div>
+
+							
+						</div>
+						<!-- Row / End -->
+
+					</div>
+					<!-- Section / End -->
+
+					<!-- Section -->
+					<div class="add-listing-section margin-top-45">
+
+						<!-- Headline -->
+						<div class="add-listing-headline">
+							<h3><i class="sl sl-icon-location"></i> Google Maps</h3>
+						</div>
+
+						<div class="submit-section">
+
+							<!-- Row -->
+							<div class="row with-forms">
+
+								
+								<!-- City -->
+								<div class="col-md-6">
+									<h5>Latitud</h5>
+									<input type="text">
+								</div>
+
+								<!-- Zip-Code -->
+								<div class="col-md-6">
+									<h5>Longitud</h5>
+									<input type="text">
+								</div>
+
+							</div>
+							<!-- Row / End -->
+							<p>Se debera proporcionar los numeros de latitud y longitud para que el lugar se ubique en el mapa.</p>
+
+						</div>
+					</div>
+					<!-- Section / End -->
+
+					<!-- Section -->
+					<div class="add-listing-section margin-top-45">
+
+						<!-- Headline -->
+						<div class="add-listing-headline">
+							<h3><i class="sl sl-icon-location"></i> Lifestyles</h3>
+						</div>
+
+						<div class="submit-section">
+
+							<!-- Row -->
+							<div class="row with-forms">
+
+								
+								<div class="col-md-12">
+
+									
+
+									<!-- Checkboxes -->
+									<h5 class=" margin-bottom-10">Los lifestyles tambien van asignados a las reviews. </h5>
+									<div class="checkboxes in-row margin-bottom-20">
+								
+										<input id="check-a" type="checkbox" name="check">
+										<label for="check-a">Elevator in building</label>
+
+										<input id="check-b" type="checkbox" name="check">
+										<label for="check-b">Friendly workspace</label>
+
+										<input id="check-c" type="checkbox" name="check">
+										<label for="check-c">Instant Book</label>
+
+										<input id="check-d" type="checkbox" name="check">
+										<label for="check-d">Wireless Internet</label>
+
+										<input id="check-e" type="checkbox" name="check" >
+										<label for="check-e">Free parking on premises</label>
+
+										<input id="check-f" type="checkbox" name="check" >
+										<label for="check-f">Free parking on street</label>
+
+										<input id="check-g" type="checkbox" name="check">
+										<label for="check-g">Smoking allowed</label>	
+
+										<input id="check-h" type="checkbox" name="check">
+										<label for="check-h">Events</label>
+								
+									</div>
+									<!-- Checkboxes / End -->
+									<!-- Traer en este select, los lifestyles creados en el abm o scrud de add-lifestyles.html Los lifestyles tambien van asigandos a las reviews, dado que el usuario, en el resultado de bussqueda del fron list-reviews.html puede filtrar las opciones por Lugares Geograficos que tengan determinados estilos de vida, como asi tambien, las reviews. -->
+								</div>
+
+								<!-- Zip-Code -->
+								<div class="col-md-12">
+									<h5>Para que Sirve?</h5>
+									<small>Los lifestyles tambien van asigandas a las reviews. Generalmente, los lugares y las reviews comparten los mismo lifetyles, pero en los filtros, el uusuario puede filtrar por lifetyle y lugar.</small>
+								</div>
+
+							</div>
+							<!-- Row / End -->
+							
+
+						</div>
+					</div>
+					<!-- Section / End -->
+
+
+					<!-- Section -->
+					<div class="add-listing-section margin-top-45">
+
+						<!-- Headline -->
+						<div class="add-listing-headline">
+							<h3><i class="sl sl-icon-picture"></i> Galeria de Fotos</h3>
+							<small>Maximo 10 fotos, en relacion 1:1</small>
+						</div>
+
+						<!-- Dropzone -->
+						<div class="submit-section">
+							<form action="/file-upload" class="dropzone" ></form>
+						</div>
+
+
+
+					</div>
+					<!-- Section / End -->
+
+
+					<!-- Section -->
+					<div class="add-listing-section margin-top-45">
+
+						<!-- Headline -->
+						<div class="add-listing-headline">
+							<h3><i class="sl sl-icon-docs"></i> Descripcion del Lugar</h3>
+							<small>Debe contener el switch para editar en HTML.</small>
+						</div>
+
+						<!-- Description -->
+						<div class="form">
+							<h5>Describe el lugar.</h5>
+							<textarea class="WYSIWYG" name="summary" cols="40" rows="3" id="summary" spellcheck="true"></textarea>
+						</div>
+
+						
+
+
+						
+
+					</div>
+					<!-- Section / End -->
+
+
+					
+					<a href="#" class="button preview">Guardar y Publicar <i class="fa fa-arrow-circle-right"></i></a>
+
+				</div>
+			</div>
+
+			<!-- Copyrights -->
+			<div class="col-md-12">
+				<div class="copyrights">© 2018 Escapar.me. </div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- Content / End -->
+
+
+</div>
+<!-- Dashboard / End -->
+
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="scripts/mmenu.min.js"></script>
+<script type="text/javascript" src="scripts/chosen.min.js"></script>
+<script type="text/javascript" src="scripts/slick.min.js"></script>
+<script type="text/javascript" src="scripts/rangeslider.min.js"></script>
+<script type="text/javascript" src="scripts/magnific-popup.min.js"></script>
+<script type="text/javascript" src="scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="scripts/counterup.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/tooltips.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+
+
+
+<!-- DropZone | Documentation: http://dropzonejs.com -->
+<script type="text/javascript" src="scripts/dropzone.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>Reviews Creadas en Escapar.me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/main.css" id="colors">
+
+</head>
+
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header Container
+================================================== -->
+<header id="header-container" class="fixed fullwidth dashboard">
+
+	<!-- Header -->
+	<div id="header" class="not-sticky">
+		<div class="container">
+			
+			<!-- Left Side Content -->
+			<div class="left-side">
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1 class="text-center" style="color: white"><Strong> Escapar.me</strong></h1>
+				</div>
+
+				<!-- Mobile Navigation -->
+				<div class="mmenu-trigger">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+
+				
+				
+			</div>
+			<!-- Left Side Content / End -->
+
+			<!-- Right Side Content / End -->
+			<div class="right-side">
+				<!-- Header Widget -->
+				<div class="header-widget">
+					
+					<!-- User Menu -->
+					<div class="user-menu">
+						<div class="user-name"><span><img src="images/dashboard-avatar.jpg" alt=""></span>Admin</div>
+						<ul>
+							<li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+							<li><a href="reviews.html"><i class="sl sl-icon-envelope-open"></i> List Reviews</a></li>
+							<li><a href="places.html"><i class="fa fa-calendar-check-o"></i> List Places</a></li>
+							<li><a href="index.html"><i class="sl sl-icon-power"></i> Logout</a></li>
+						</ul>
+					</div>
+
+					<a href="add-review.html" class="button border with-icon">Crear Review <i class="sl sl-icon-plus"></i></a>
+				</div>
+				<!-- Header Widget / End -->
+			</div>
+			<!-- Right Side Content / End -->
+
+		</div>
+	</div>
+	<!-- Header / End -->
+
+</header>
+<div class="clearfix"></div>
+<!-- Header Container / End -->
+
+
+<!-- Dashboard -->
+<div id="dashboard">
+
+	<!-- Navigation
+	================================================== -->
+
+	<!-- Responsive Navigation Trigger -->
+	<a href="#" class="dashboard-responsive-nav-trigger"><i class="fa fa-reorder"></i> Dash</a>
+
+	<div class="dashboard-nav">
+		<div class="dashboard-nav-inner">
+
+			<ul data-submenu-title="Main">
+				<li class="active"><a href="dash.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+				<li><a href="reviews.html"><i class="sl sl-icon-envelope-open"></i> Reviews <span class="nav-tag messages">21</span></a></li>
+				<li><a href="places.html"><i class="fa fa-calendar-check-o"></i> Places <span class="nav-tag messages">21</span></a></li>
+			</ul>
+			
+			<ul data-submenu-title="Creador de:">
+				
+				<li><a href="add-categories.html"><i class="sl sl-icon-star"></i> Categorias</a></li>
+				<li><a href="add-lifestyles.html"><i class="sl sl-icon-heart"></i> Lifestyles</a></li>
+				<li><a href="add-places.html"><i class="sl sl-icon-plus"></i> Places</a></li>
+				<li><a href="add-review.html"><i class="sl sl-icon-plus"></i> Review</a></li>
+			</ul>	
+
+			
+			
+		</div>
+	</div>
+	<!-- Navigation / End -->
+
+
+	<!-- Content
+	================================================== -->
+	<div class="dashboard-content">
+
+		<!-- Titlebar -->
+		<div id="titlebar">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Reviews Creadas</h2>
+					<!-- Breadcrumbs -->
+					<nav id="breadcrumbs">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Dash</a></li>
+							<li>Reviews</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			
+			<!-- Listings -->
+			<div class="col-lg-12 col-md-12">
+				<div class="dashboard-list-box margin-top-0">
+					<h4>Lista de Reviews Creadas</h4>
+					<ul>
+
+						<li>
+							<div class="list-box-listing">
+								<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-02.jpg" alt=""></a></div><!-- Traer primera foto de las 10 que se cargan en la galeria -->
+								<div class="list-box-listing-content">
+									<div class="inner">
+										<h3>Titulo de la Review</h3><!-- Titulo de la Review -->
+										<span>Valle de Calamuchita, Cordoba, Argentina</span><!-- Traer el Nommbre del Lugar, que seria el Titul del Lugar, Acompanado de la Provincia y el Pais -->
+										<div class="star-rating" data-rating="5.0"><!-- Puntate del Lugar -->
+											<div class="rating-counter"> Excelente Lugar</div><!-- Calificacion en palabra -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="buttons-to-right">
+								<a href="#" class="button gray"><i class="sl sl-icon-close"></i> Borrar</a><!-- Borrar de la base -->
+								<a href="add-reviews.html" class="button gray"><i class="sl sl-icon-close"></i> Editar</a><!-- Editar el contenido -->
+								<a href="#" class="button gray"><i class="sl sl-icon-close"></i> Ocultar</a><!-- Ocultar o Mostrar el contenido // La palabra Ocultar, debe cambiar a Mostrar dependiendo del valor en la base, siendo el estado 1 para que este visible y 0 para que este oculto. De esta manera, no perdemos la informmacion -->
+							</div>
+						</li>
+
+						
+					<!-- No tiene paginador, los resultados deben listarse en modo infinito a medida que se va scrolleando para abajo -->
+					</ul>
+				</div>
+			</div>
+
+
+			<!-- Copyrights -->
+			<div class="col-md-12">
+				<div class="copyrights">© 2018 Escapar.me. </div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Content / End -->
+
+
+</div>
+<!-- Dashboard / End -->
+
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Scripts
+================================================== -->
+<script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="scripts/mmenu.min.js"></script>
+<script type="text/javascript" src="scripts/chosen.min.js"></script>
+<script type="text/javascript" src="scripts/slick.min.js"></script>
+<script type="text/javascript" src="scripts/rangeslider.min.js"></script>
+<script type="text/javascript" src="scripts/magnific-popup.min.js"></script>
+<script type="text/javascript" src="scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="scripts/counterup.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/tooltips.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+
+
+</body>
+</html>
